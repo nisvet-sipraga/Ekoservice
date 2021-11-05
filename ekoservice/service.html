@@ -1,0 +1,755 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title> EKO gebäudeservice </title>
+        <meta content="width=device-width, initial-scale=1.0" name="viewport">
+        <meta content="EKO" name="keywords">
+        <meta content="EKO" name="description">
+
+        <!-- Favicon -->
+        <link href="img/2.png" rel="icon">
+
+        <!-- Google Font -->
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+
+        <!-- CSS Libraries -->
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+        <link href="lib/animate/animate.min.css" rel="stylesheet">
+        <link href="lib/flaticon/font/flaticon.css" rel="stylesheet"> 
+        <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+        <link href="lib/lightbox/css/lightbox.min.css" rel="stylesheet">
+
+        <!-- Template Stylesheet -->
+        <link href="css/style.css" rel="stylesheet">
+        <style>
+            
+            
+            /* The Modal (background) */
+            .modal {
+              display: none; /* Hidden by default */
+              position: fixed; /* Stay in place */
+              z-index: 1000; /* Sit on top */
+              padding-top: 200px; /* Location of the box */
+              left: 0;
+              top: 0;
+              width: 100%; /* Full width */
+              height: 100%; /* Full height */
+              overflow: auto; /* Enable scroll if needed */
+              background-color: rgb(0,0,0); /* Fallback color */
+              background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+            }
+            
+            /* Modal Content */
+            .modal-content {
+              position: relative;
+              background-color: #fefefe;
+              margin: auto;
+              padding: 0;
+              border: 1px solid #888;
+              width: 80%;
+              box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+              -webkit-animation-name: animatetop;
+              -webkit-animation-duration: 0.4s;
+              animation-name: animatetop;
+              animation-duration: 0.4s;
+             
+              
+            }
+            
+            /* Add Animation */
+            @-webkit-keyframes animatetop {
+              from {top:-300px; opacity:0} 
+              to {top:0; opacity:1}
+            }
+            
+            @keyframes animatetop {
+              from {top:-300px; opacity:0}
+              to {top:0; opacity:1}
+            }
+            
+            /* The Close Button */
+            .close {
+              color: white;
+              float: right;
+              font-size: 28px;
+              font-weight: bold;
+            }
+            
+            .close:hover,
+            .close:focus {
+              color: white;
+              text-decoration: none;
+              cursor: pointer;
+            }
+            
+            .modal-header {
+              padding: 2px 16px;
+              background-color: #343148;
+              color: #fff;
+            }
+            
+            .modal-body {
+                padding: 2px 16px;
+                background-color:#fff;
+            }
+            
+            .modal-footer {
+              padding: 2px 16px;
+              background-color: #343148;
+              color: #fff;
+            }
+            </style>
+    </head>
+
+    <body>
+             <!-- Top Bar Start -->
+             <div class="top-bar d-none d-md-block">
+              <div class="container-fluid">
+                  <div class="row">
+                      <div class="col-md-8">
+                          <div class="top-bar-left">
+                              <div class="text">
+                                  <i class="far fa-clock"></i>
+                                  <h2>00:00 - 24  :00</h2>
+                                  <p>Mon - Son</p>
+                              </div>
+                              <div class="text">
+                                  <i class="fa fa-phone-alt"></i>
+                                  <h2>015 751 313888</h2>
+                                
+                              </div>
+                          </div>
+                      </div>
+                      <div class="col-md-4">
+                          <div class="top-bar-right">
+                              <div class="social">
+                                  <a href="https://www.facebook.com/Eko-service-109038698207709"><i class="fab fa-facebook-f"></i></a>
+                                  <a href="https://www.instagram.com/ekogebaudeservice/"><i class="fab fa-instagram"></i></a>
+                                  <a href=""><i class="fa fa-envelope"></i></a>
+                                  <a href="mailto:info@sup.de" data-label="E-mail" rel="nofollow" class="icon plain email tooltip tooltipstered"><i class="fa fa-envelope"></i></a>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+            <!-- Top Bar End -->
+    
+            <!-- Nav Bar Start -->
+            <div class="navbar navbar-expand-lg bg-dark navbar-dark">
+                <div class="container-fluid">
+                    <a href="index.html" class="navbar-brand"><img src="img/logo.png " style="position: left 150;"></a>
+                    <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+    
+                    <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+                        <div class="navbar-nav ml-auto">
+                            <a href="index.html" class="nav-item nav-link ">Home</a>
+                            <a href="about.html" class="nav-item nav-link ">Über uns</a>
+                            <a href="service.html" class="nav-item nav-link active">Service</a>
+                            <a href="kategorien.html" class="nav-item nav-link">Kategorien</a>
+                            <a href="contact.html" class="nav-item nav-link">Kontakt</a>
+                            <a href="datenschutz.html" class="nav-item nav-link">Datenschutz</a>
+                            <a href="büroreinigung-stuttgart.html" class="nav-item nav-link">Büroreinigung</a>
+                            <a href="renovierungsarbeiten-stuttgart.html" class="nav-item nav-link ">Renovierungsarbeiten </a>
+                            <a href="hausmeisterservice-stuttgart.html" class="nav-item nav-link ">Hausmeisterservice </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Nav Bar End -->
+            <br>
+            <br>
+            <br>
+
+            <div class="section-header text-center " style="padding-top: 50PX;">
+              <p>Service</p>
+
+      </div>
+        <!-- Service Start -->
+        <div class="service">
+          <div class="container">
+              <div class="section-header text-center wow zoomIn" data-wow-delay="0.1s">
+               
+                  
+              </div>
+              <div class="row">
+                  <div class="col-lg-4 col-md-6 wow fadeInUp"  id="myBtn" data-wow-delay="0.0s">
+                      <div class="service-item">
+                          <div class="service-icon">
+                              <i><img src="img/icon/Gartenpflege.png" ></i>
+                          </div>
+                          <h3>Gartenpflege</h3>
+                          </a>
+                          <p>
+                              <p>Haben Sie keine Erfahrung im Bereich Gartenpflege? Kein Problem! Sie können uns vertrauen.<br><br></a>
+                          </p>
+                      </div>
+                  </div>
+                  <div id="myModal" class="modal">
+
+                      <!-- Modal content -->
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h2 style="color: white;">Gartenpflege</h2>
+                          <span class="close">&times;</span>
+                        </div>
+                        <div class="modal-body">
+                      
+                          <p>Unsere Priorität ist die Qualität aller angebotenen Gartenarbeiten. Wenn Sie Profis suchen, die sich auf die Gartenpflege spezialisieren, können Sie uns kontaktieren, damit wir alle Details unserer Zusammenarbeit besprechen können.
+
+                              Wenn Sie eine erfahrene Firme mit der Pflege Ihres Gartens in beauftragen möchten, stehen wir Ihnen gerne zur Verfügung. Unsere Kunden können Dienstleistungen auf höchstem Niveau erwarten. Auch wenn es sich um öffentliche Grünanlagen in Stuttgart handelt, können Sie uns vertrauen.
+                              
+                              Unser Team besteht aus Gartenexperten, die genau wissen was Sträucher und Rasen in Ihrem Garten brauchen, um üppig zu gedeihen. Gerne antworten wir auf alle Ihre Fragen nach unseren Dienstleistungen.<br><br>
+                              
+                              &nbsp;&nbsp;&nbsp;Pflanzenschnitt<br>
+                              &nbsp;&nbsp;&nbsp;Formrückschnitt<br>
+                              &nbsp;&nbsp;&nbsp;Rosenschnitt<br>
+                              &nbsp;&nbsp;&nbsp;Blumenschnitt<br>
+                              &nbsp;&nbsp;&nbsp;Rabattenpflege<br>
+                              &nbsp;&nbsp;&nbsp;Unkrautenentfernung<br>
+                              &nbsp;&nbsp;&nbsp;Entsorgung von Grünabfälle<br><br>
+                              
+                              
+                              Es ist nicht zu leugnen, dass jeder Garten die richtige Gartenpflege benötigt. Die meisten Gartenarbeiten sollten regelmäßig durchgeführt werden. Kein Wunder, dass sich so viele Gartenbesitzer dafür entscheiden, Profis mit der Gartenpflege zu beauftragen. Zu jeder Jahreszeit haben Bäume, Sträucher sowie Rasen andere Bedürfnisse. Wenn man seinen Garten pflegen möchte, muss man diese Bedürfnisse kennen. Haben Sie keine Erfahrung im Bereich Gartenpflege? Kein Problem! Sie können uns vertrauen. Unseren Kunden, sowohl Privatpersonen, als auch öffentlichen Einrichtungen und Firmen aus verschiedenen Sektoren, bieten wir ein breites Leistungsspektrum an. Unser aktuelles Angebot umfasst nicht nur die klassische Rasenpflege, sondern auch der Baumschnitt sowie die Unkrautentfernungen. Immer möchten wir unseren Kunden entgegen kommen. Aus diesem Grund bieten wir Ihnen auch die Fachpflege, die u.a. Zuschnitt von Hecken, Sträuchern und Bäumen, Rosen- und Staudenpflege, Neuansaat von Rasen und Rollrasen, Düngemaßnahmen, Neupflanzungen etc. umfasst.
+                              
+                              Sie sind Gartenbesitzer, die nach einem zuverlässigen Gartenpflege-Service suchen? Zum umfassenden Service der Gartenpflege gehören alle wichtigsten Gartenarbeiten. Auch wenn Sie eine Gewerbeimmobilie mit Bäumen oder einer Grünfläche haben, können Sie uns beauftragen. Unser Angebot umfasst auch die Pflege der Parkanlagen.
+                              
+                              Wünschen Sie sich gesunde und prächtige Bäume und Pflanzen? Setzen Sie sich mit uns in Verbindung, damit wir alles vereinbaren können. Danach bekommen Sie ein unverbindliches Angebot. Auf Wunsch bekommen Sie auch frische Gestaltungsideen für Ihren Garten. Im Voraus freuen wir uns auf Ihre Anfragen.
+                              Kontaktieren Sie uns: </p>
+                        </div>
+                        <div class="modal-footer" style="height: 50px;">
+                  
+                        </div>
+                      </div>
+                    
+                    </div>
+
+                  <div class="col-lg-4 col-md-6 wow fadeInUp" id="myBtn1" data-wow-delay="0.2s">
+                      <div class="service-item">
+                          <div class="service-icon">
+                              <i><img src="img/icon/Gebudereinigung.png" ></i>
+                          </div>
+                          <h3>Gebäudereinigung</h3>
+                          <p>
+                              Wir richten uns als Reinigungsservice mit unserem Angebot sowohl an Unternehmen als auch an Privatpersonen.
+                          </p>
+                      </div>
+                  </div>
+                  
+                  <div id="myModal1" class="modal">
+
+                      <!-- Modal content -->
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h2 style="color: white;">Gebäudereinigung</h2>
+                          <span class="close">&times;</span>
+                        </div>
+                        <div class="modal-body">
+                          <br>Gebäudereinigung nach Maß und individuellen Wünschen 
+                          <br><br>Sie suchen einen kompetenten Reinigungsservice, dem Sie von Anfang an vertrauen können und wünschen sichüberragende Ergebnisse als auch einen ansprechenden Service Dann sind Sie bei uns richtig.
+                          <br><br><span style="font-weight: bold;"> Reinigungsservice</span>
+                          <br><br>Wir bieten einen Reinigungsservice für Ihr Gebäude, den Sie bei Bedarf oder regelmäßig in Anspruch nehmen können. Auf unsere Leistungen können Sie zählen. Als Reinigungsunternehmen beraten wir Sie gerne bei der Planung Ihrer Gebäudereinigung.
+                          <br><br>Als Reinigungsunternehmen unterstützen wir Sie gerne bei der Vorbereitung Ihrer Gebäudereinigung. Wir bieten alle Lösungen rund um die Gebäudereinigung. Reinigungsdienstleistungen sind eine unserer Spezialitäten, unsere Produkte richten sich sowohl an Unternehmen als auch an Privatpersonen. Unser Service macht diesen einen Unterschied.
+                          <br><br>Als Service für die Reinigung. Wir kennen die Tricks und Tipps, die Schmutz und Dreck entfernen können.Wir stehen Ihnen jederzeit zur Seite. Wir versprechen Ihnen ein positives Ergebnis nach der professionellen Gebäude- und Wohnungsreinigung durch unsere Experten. Darüber hinaus bieten wir einen Reinigungsservice für große und kleine Gebäudereinigungen sowie für Vermieter eine Treppenreinigung an. Wir bieten alle Arten von Gebäudeinstandhaltung, immer zu fairen Preisen und auf Ihre speziellen Bedürfnisse zugeschnitten. Dabei vergessen wir die ökologischen Aspekte nicht, bei der Reinigung der Gebäude.
+                          <br><br>konzentrieren wir uns nicht nur auf die beste Reinigung, sondern vergessen auch den ökologischen Aspekt nicht. Unser Team ist bekannt für die Flexibilität unseres Teams und Sie profitieren von unserem Reinigungsservice. Stellen Sie sicher, dass Sie ein solides Fundament haben und zählen Sie auf einen soliden Service. Als Reinigungsdienst haben wir ein Standard-Reinigungssystem geschaffen, das sich durch ein exzellentes Qualitätsmanagement auszeichnet.
+                      </div>
+                        <div class="modal-footer" style="height: 50px;">
+                          
+                        </div>
+                      </div>
+                    
+                    </div>
+                    
+                 
+
+                  <div class="col-lg-4 col-md-6 wow fadeInUp" id="myBtn2" data-wow-delay="0.4s">
+                      <div class="service-item">
+                          <div class="service-icon">
+                              <i><img src="img/icon/Gebudeservice.png" ></i>
+                          </div>
+                          <h3>Gebäudeservice</h3>
+                          <p>
+                              Wir übernehmen für Sie die Betreuung Ihrer Grundstücke und Gebäude und sorgen vor allem für Ordnung und Sauberkeit.
+                          </p>
+                      </div>
+                  </div>
+
+                  <div id="myModal2" class="modal">
+
+                      <!-- Modal content -->
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h2 style="color: white;">Gebäudeservice</h2>
+                          <span class="close">&times;</span>
+                        </div>
+                        <div class="modal-body">
+                       <br>   Wir übernehmen für Sie die Betreuung Ihrer Grundstücke und Gebäude und sorgen vor allem für Ordnung, Sauberkeit und Funktionsfähigkeit aller haustechnischen Einrichtungen. Unser Gebäudeservice beinhaltet unter anderem die Veranlassung und Überwachung von Instandhaltungsarbeiten, regelmäßige Kontrollen aller Einrichtungen, sowie die Planung und Überwachung von Wartungsarbeiten.
+                      <br><br>Wir kümmern uns für Sie um Ihre Grundstücke und Gebäude und sorgen vor allem für die Sauberkeit, Ordnung und Funktionsfähigkeit aller haustechnischen Einrichtungen. Unser Gebäudeservice beinhaltet: die Überwachung der Instandhaltungsarbeiten, die regelmäßige Überprüfung der Anlagen sowie die Terminierung und Überwachung der Instandhaltungsarbeiten.
+                      <br><br>Unser Unternehmen ist der „verlängerte Arm“ vor Ort. Das steigert nicht nur den Wert Ihres Hauses, sondern sorgt auch für ein besseres Wohnumfeld für Sie und Ihren Mieter. Für alle unsere Dienstleistungen gibt es nur einen Ansprechpartner. Insgesamt: zeitnah, zuverlässig und erschwinglich; es lohnt sich, mit uns zu sprechen. Gerne schlagen wir Ihnen ein kostenloses und unverbindliches Angebot vor.
+                      <br><br>
+                  </div>
+                        <div class="modal-footer" style="height: 50px;">
+                          
+                        </div>
+                      </div>
+                    
+                    </div>
+
+                  <div class="col-lg-4 col-md-6 wow fadeInUp"  id="myBtn3" data-wow-delay="0.6s">
+                      <div class="service-item">
+                          <div class="service-icon">
+                              <i><img src="img/icon/Graffitientfernung.png" ></i>
+                          </div>
+                          <h3>Graffitientfernung</h3>
+                          <p>
+                              LoGraffiti und Schmierereien an der Fassade – ein Ärgernis für Hausbesitzer. Wir sind da und helfen!<br><br><br>
+                          </p>
+                      </div>
+                  </div>
+                  <div id="myModal3" class="modal">
+
+                      <!-- Modal content -->
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h2 style="color: white;">Graffitientfernung</h2>
+                          <span class="close">&times;</span>
+                        </div>
+                        <div class="modal-body">
+                            <br>Farbentfernung und Schlieren an der Fassade können für Hausbesitzer zum Problem werden. Graffiti ist keine Sache, die man in Ruhe lassen sollte, wie wir gesehen haben. Daher ist es am besten, die Farben so schnell wie möglich von der Fassade oder den Wänden entfernen zu lassen. Die Entfernung von Graffiti von nicht geschützten Oberflächen ist eine besondere Herausforderung. Die Farbe kann tief in das Material eindringen und das Entfernen erschweren. 
+                            <br><br>
+                            Eine besondere Herausforderung ist die Entfernung einer geschützten Oberfläche. Die Farben dringen oft tief in die Oberfläche ein und erschweren das Entfernen. Die spezifischen Graffiti-Farben können normalerweise nicht mit Standardmethoden entfernt werden. Wenn Sie es selbst versuchen, wird der Schaden normalerweise nur noch schlimmer. Die Oberfläche kann beschädigt werden oder Farbpigmente werden in die Oberfläche eingearbeitet. Um Graffiti schonend und rückstandsfrei zu reinigen, braucht es professionell formulierte Reinigungsprodukte und die richtige Technik. Dabei spielt es keine Rolle, ob das Graffiti auf eine fassadengestrichene Betonoberfläche gemalt wurde, komplett fertiger oder fertiger Putz, die Natursteine und Glasfliesen oder Sand, Klinker und Metall, Eternit-WDVS, Marmor, Beton und Travertin, Plexiglas, Autolack , da können wir damit umgehen. Wir haben das Fachwissen, das Know-how und die Technologie, um Graffiti von vielen Oberflächen zu entfernen.
+                            <br><br>Als Experte für Oberflächen und Fassaden reinigen wir Ihre Wände effizient und oberflächenspezifisch. Wir behandeln Ihre Fassade so schonend wie möglich. Um Graffiti zu beseitigen, verwenden wir hochwertige Produkte und Heißwasser-Hochdruckreiniger, um die Sprühfarbe oder Edding usw. loszuwerden. von der Oberfläche. Zusätzlich kann die Absaughaube, auch Oberflächenreiniger genannt, zur Reinigung der Oberfläche verwendet werden. Graffiti können wir auch schonend von der Fassade entfernen. Nach der Reinigung empfiehlt es sich, die Fassade mit einem Graffitischutzschild zu behandeln, um bei erneuter Verschmutzung Graffiti und Schlieren zu entfernen. Eine schnelle und häufige Entfernung verringert die Wahrscheinlichkeit von Flecken drastisch.
+                            <br><br>
+                        </div>
+                        <div class="modal-footer" style="height: 50px;">
+                          
+                        </div>
+                      </div>
+                    
+                    </div>
+
+                  <div class="col-lg-4 col-md-6 wow fadeInUp" id="myBtn4" data-wow-delay="0.8s">
+                      <div class="service-item">
+                          <div class="service-icon">
+                              <i><img src="img/icon/Hausmeister.png" ></i>
+                          </div>
+                          <h3>Hausmeister</h3>
+                          <p>
+                              Unsere Leistungen umfassen verschiedene Arbeiten rund um Ihre Immobilie.<br><br><br>
+                          </p>
+                      </div>
+                  </div>
+                  <div id="myModal4" class="modal">
+
+                      <!-- Modal content -->
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h2 style="color: white;">Hausmeister</h2>
+                          <span class="close">&times;</span>
+                        </div>
+                        <div class="modal-body">
+                          <br>Unsere Dienstleistungen decken eine Vielzahl von Aufgaben rund um Ihr Zuhause ab. Unsere kompetenten und fachkundigen Mitarbeiter kümmern sich termingerecht um Ihre Immobilie. Schnelle Reaktion auf Notfälle. Pünktliche Lieferung der zu entleerenden Mülltonnen, den Bereich um die Tonnen sauber halten, mit regelmäßigen Kontrollen, die Außenanlagen sauber halten. Entfernen von Laub von Gehwegen mit Hilfe eines Laubbläsers usw. Erhaltung des guten Zustands und schnelle Behebung kleinerer Mängel.Regelmäßige Überwachung der Gebäude- und Beleuchtungstechnik. Kontrolle von Heizungs- und Ölstand, Wartung von Aufzügen, Entleerung von Münzautomaten schriftliche Abrechnung und mehr.
+                          <br><br>Zusammenarbeit mit dem Hausverwalter: Ersetzen und Prüfen von Türklingeln und Briefkastenbeschriftungen
+                          <br><br>Verteilung des Kommunikationsfotodienstes für Aufnahmen vor Ort
+                          <br><br>Anbringen von Hinweisen etc.
+                          <br><br>Sonderaufgaben Reinigung der Tiefgarage
+                          <br><br>Müllentsorgung  
+                          <br><br>Eine regelmäßige und gründliche Instandhaltung Ihrer Wohnung trägt zur Werterhaltung bei. Deshalb befolgen wir regelmäßig alle Ihre „Hausrichtlinien“. Privathaushalte bestimmen die Jahreszeit und wir kommen pünktlich und mit hoher Zuverlässigkeit an
+                          <br><br>                          
+                      </div>
+                        <div class="modal-footer" style="height: 50px;">
+                        </div>
+                      </div>
+                    
+                    </div>
+                  <div class="col-lg-4 col-md-6 wow fadeInUp" id="myBtn5" data-wow-delay="1s">
+                      <div class="service-item">
+                          <div class="service-icon">
+                              <i><img src="img/icon/Innenreinigung.png" ></i>
+                          </div>
+                          <h3>Innenreinigung</h3>
+                          <p>
+                              Die richtige und regelmäßige Pflege Ihrer Wohnanlage dient der Werterhaltung. Aus diesem Grund führen wir zuverlässig Ihre „Hausordnung“ durch.
+                          </p>                            
+                      </div>
+                  </div>
+                  <div id="myModal5" class="modal">
+
+                      <!-- Modal content -->
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h2 style="color: white;">Innenreinigung</h2>
+                          <span class="close">&times;</span>
+                        </div>
+                        <div class="modal-body">
+                         <br>
+                         Ein genaues Pflegeprogramm für Ihr Haus trägt zur Werterhaltung bei. Deshalb halten wir uns konsequent an die „Hausordnung“. Dazu gehört beispielsweise das Reinigen und Wischen des Treppenhauses. Reinigung von Treppengeländer und Türen Reinigung des Briefkastens mit oder ohne Rahmen Reinigung von Kellerfluren und Fluren Grundreinigung von nahezu allen Bodenbelägen Wir setzen umweltfreundliche Produkte ein. Wenn es die Umgebung zulässt, wird die Aufgabe mit Reinigungsmaschinen erledigt. Kontinuierliche Schulungen unserer Mitarbeiter ermöglichen es uns, das Beste aus Ihrem Wohnort herauszuholen. Genauere Dienstleistungen erbringen wir bei einem Besuch bei Ihnen zu Hause mit einem unserer Vertreter. Er erstellt für Ihre Wohnanlage ein individuelles "Paket", bei dem Ihre Bedürfnisse berücksichtigt werden. 
+                         <br><br> 
+                          
+                        </div>
+                        <div class="modal-footer" style="height: 50px;">
+                          
+                        </div>
+                      </div>
+                    
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" id="myBtn6" data-wow-delay="1.2s">
+                      <div class="service-item">
+                          <div class="service-icon">
+                              <i><img src="img/icon/Privathaushalte.png" ></i>
+                          </div>
+                          <h3>Privathaushalte</h3>
+                          <p>
+                              Sie bestimmen den Turnus und wir kommen pünktlich und zuverlässig.<br><br><br>
+                          </p>                            
+                      </div>
+                  </div>
+                  <div id="myModal6" class="modal">
+
+                      <!-- Modal content -->
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h2 style="color: white;">Privathaushalte</h2>
+                          <span class="close">&times;</span>
+                        </div>
+                        <div class="modal-body">
+                        
+                      <br>Privathaushalte - Wir kümmern uns um Ihren Lebensschwerpunkt! Vielleicht haben Sie einen Baum, der nicht leicht zugänglich ist? Vielleicht haben Sie einen Wintergarten? Das ist in Ordnung! Sie sind eine Eigentümergemeinschaft und benötigen keine regelmäßige Hallenreinigung? Sie wählen die Jahreszeit und wir erscheinen pünktlich und mit hoher Zuverlässigkeit. Sie möchten Ihren Parkettboden über viele Jahre pflegen und müssen ihn erneut schleifen und versiegeln? Ihr Linoleum- oder Steinboden soll wie neu aussehen? Ihre Teppiche sind einfach zu schön, um sie auszutauschen, aber Sie können sie nicht mehr selbst pflegen? Wir reinigen und renovieren Ihre Böden, um deren Qualität und Funktion zu erhalten. Kunststoff- und Holzböden sehen nach professioneller Reinigung und Versiegelung wie neu aus. Wir können helfen! Sie renovieren und Ihre Wände, Böden, Fliesen, Türen und Fenster sind beschädigt?
+                      <br><br>Vielleicht sind Sie umgezogen und Ihre Vormieter haben Ihnen ein Haus überlassen, das gereinigt werden muss? Es ist Zeit für eine gründliche Reinigung! Hatten Sie einen Wasser- oder Brandschaden, der einen Umbau Ihres Hauses erforderte? Haben Sie gebaut und dann bei der Endreinigung alle Spuren eins für alle beseitigen lassen? Dies wird eine große Erleichterung sein, wenn diese Aufgabe von einer erfahrenen Hand erledigt wird. Ungebetene Gäste wurden durch Graffiti an Ihrem Haus verewigt? Für die Entfernung und den Schutz der Zukunft gibt es professionelle Lösungen. Auch im Winter stehen wir Ihnen zur Verfügung, mit Verlass. Unser zuverlässiger Räum- und Streuservice bei Schnee- und Eisverhältnissen nimmt Ihnen Stress und sorgt für Sicherheit. Egal welche Reinigungsbedürfnisse Sie haben, wir sind für Sie da. Wir erstellen Ihnen ein maßgeschneidertes Angebot für Ihre spezifischen Bedürfnisse. Erfahren Sie mehr über unser breites Leistungsspektrum in der entsprechenden Rubrik.
+                      <br><br>
+
+                        </div>
+                        <div class="modal-footer" style="height: 50px;">
+                          
+                        </div>
+                      </div>
+                    
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" id="myBtn7" data-wow-delay="1.4s">
+                      <div class="service-item">
+                          <div class="service-icon">
+                              <i><img src="img/icon/Renovierungsarbeiten.png" ></i>
+                          </div>
+                          <h3>Renovierungsarbeiten</h3>
+                          <p>
+                              Kurzum, wenn Umbau-Arbeiten auf der Agenda stehen, dann sind Sie mit EKO Gebäudeservice auf der richtigen Seite.
+                          </p>                            
+                      </div>
+                  </div>
+                  <div id="myModal7" class="modal">
+
+                      <!-- Modal content -->
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h2 style="color: white;">Renovierungsarbeiten</h2>
+                          <span class="close">&times;</span>
+                        </div>
+                        <div class="modal-body">
+                          
+                          <p>
+                              <br>Haben Sie geradeeine Immobilie gekauft oder denken Sie darüber nach? Wenn Sie „nur“ eine neue Wohnung gemietet haben, sind Sie sehr glücklich, dass alles gut gelaufen ist, aber was passiert mit der nächsten Renovierung? Wenn alles nach Ihrem absoluten Guten läuft. Okay, aber die Realität kann im Allgemeinen anders aussehen und erfordert eine gründliche Überprüfung. Das andere oder eines der Details entspricht nicht Ihren Vorstellungen und Sie möchten es heller und geselliger sehen? Dann ist ein agentin der Immobilienbranche, der sich der professionellen Sanierung verschrieben hat, genau der richtige Ansprechpartner für Sie? 
+                              <br><br>Unsere Renovierungsleistungen kommen zum Einsatz, wenn es an der Zeit ist zu erneuern, umzugestalten und zu modernisieren oder wenn nach dem Verkauf einer Wohnung umfangreiche Renovierungsarbeiten anstehen. Wir haben kompetente Ansprechpartner für Trockenbau wie Dämmen, Fliesenlegen, Laminat, Parkett- und Fliesenverlegung sowie Tapezieren, Lackieren usw. Wenn Umbau auf Ihrer Agenda steht, dann sind Sie bei EKO,Gebäudservice an der richtigen Stelle. Können Sie konkrete Vorschläge machen, wie Ihr neues Zuhause oder Ihre ideale Wohnung aussehen wird? Es ist großartig! Wenn Sie sich nicht sicher sind, wie der Raum am besten gestaltet ist, stehen Ihnen die Experten und unsere Umbauassistenten mit Vorschlägen und Maßnahmen zur Verfügung. Erfahrenes Wissen und neue Denkansätze, die dann zu einem möglichst erfolgreichen Ergebnis in die Realität umgesetzt werden. Ein einziger Telefonkontakt genügt, um Ihren Wohntraum wahr werden zu lassen. Unsere Haupttätigkeitsfelder in allen Bereichen der Immobilien sind:
+                              <br><br>                                
+                      
+                              
+                              
+                                  Trockenbau<br>
+                                  Tapezieren<br>
+                                  Lackieren<br>
+                                  Streichen<br>
+                                  Fliesen verlegen<br>
+                                  Laminat-, Parkett-, PVC Verlegung<br>
+                                  Zäune richten und stellen</p>
+                        </div>
+                        <div class="modal-footer" style="height: 50px;">
+                         
+                        </div>
+                      </div>
+                    
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" id="myBtn8" data-wow-delay="1.6s">
+                      <div class="service-item">
+                          <div class="service-icon">
+                              <i><img src="img/icon/Terrassenreinigung.png" ></i>
+                          </div>
+                          <h3>Terrassenreinigung</h3>
+                          <p>
+                              Um ein gepflegtes Beisammensein lange zu genießen, braucht eine Außenanlage regelmäßige Pflege.<br><br>
+                          </p>                            
+                      </div>
+                  </div>
+                  <div id="myModal8" class="modal">
+
+                      <!-- Modal content -->
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h2 style="color: white;">Terrassenreinigung</h2>
+                          <span class="close">&times;</span>
+                        </div>
+                        <div class="modal-body">
+                          <br>Beläge für Terrassen und Gärten aus Natur- und Kunststeinen im Außenbereich werden in der Regel geschliffen, geflammt oder gestrahlt. Sie bieten daher die nötige Rutschfestigkeit und Unempfindlichkeit.
+                          <br><br>Zumindest das Wetter, Grillen, Geburtstagsfeiern und dergleichen hinterlassen ihre Spuren. Die Palette der Flecken reicht von hartnäckigen Fett- und Ölflecken nach Gartenpartys über in den Boden eindringende Flecken und Blattpigmente nach dem Winter bis hin zu Algen- und Moosbewuchs. Die helleren Farben und Oberflächen sind anfälliger für Flecken oder Verschmutzungen.
+                          <br><br>Aber auch Holzterrassen, BPC-Terrassen (Bambus-Kunststoff-Verbundstoffe) können mit der Zeit Dreck ansetzen. Um ein gepflegtes Beisammensein lange zu genießen, braucht eine Außenanlage regelmäßige Pflege. Oft hilft schon Kehren, damit sich der Schmutz nicht festsetzen oder mit dem Material eine feste Verbindung eingehen kann. Bei stärkeren Verschmutzungen sorgt BSS für eine auf den Untergrund abgestimmte Reinigung, die Ihre Terrasse gesäubert in neuem Glanz erstrahlen lässt. Um den Untergrund haltbarer und resistenter gegen neue Verschmutzungen zu machen und bei Verschmutzungen eine leichtere Reinigung zu bewirken, bieten wir Ihnen auch den richtigen Schutz für die gereinigte Fläche an.
+                          <br><br>
+                          </div>
+                        <div class="modal-footer" style="height: 50px;">
+                          
+                        </div>
+                      </div>
+                    
+                    </div>
+
+                    <div class="col-lg-4 col-md-6 wow fadeInUp" id="myBtn9" data-wow-delay="1.8s" style="margin: auto;">
+                      <div class="service-item">
+                          <div class="service-icon">
+                              <i><img src="img/icon/buroreinigung.png" ></i>
+                          </div>
+                          <h3>Büroreinigung</h3>
+                          <p>
+                              Mit unserer fachmännischen und sorgfältigen Büroreinigung tragen wir zu einem dauerhaften Werterhalt Ihres Büros und einem aufgeräumten Erscheinungsbild Ihres Unternehmens bei.</p>                            
+                      </div>
+                  </div>
+                  <div id="myModal9" class="modal">
+
+                      <!-- Modal content -->
+                      <div class="modal-content">
+                        <div class="modal-header">
+                          <h2 style="color: white;">Büroreinigung</h2>
+                          <span class="close">&times;</span>
+                        </div>
+                        <div class="modal-body">
+                          <br>Als führendes Gebäudereinigungsunternehmen bieten wir Ihnen professionelle Büroreinigung in Stuttgart, um Ihren Kunden einen perfekten Arbeitsplatz und ein professionelles Image Ihres Unternehmens zu gewährleisten. Böden, Oberflächen und sanitäre Einrichtungen, Wände und Aktenschränke oder jede andere Arbeitsplatzausstattung, wir sind genau die richtige Wahl, um Ihnen dabei zu helfen, ein organisiertes Büro zu erhalten und dabei einen positiven Arbeitsplatz zu gewährleisten, an dem sich Ihre Mitarbeiter entwickeln können.
+                          <br><br>Unser professionelles Reinigungspersonal wird durch Reinigung und Desinfektion einen positiven Eindruck in Ihrem Büro hinterlassen. Sie reinigen leise, um sicherzustellen, dass Ihr Unternehmen während der gesamten Reinigungsaufgabe reibungslos läuft. Gerne bieten wir unseren Reinigungsservice während Ihrer Arbeitszeit an.
+                          <br><br>Mit unserer fachmännischen und sorgfältigen Büroreinigung tragen wir zu einem dauerhaften Werterhalt Ihres Büros und einem aufgeräumten Erscheinungsbild Ihres Unternehmens bei.
+                          <br><br>Für die Büroreinigung bieten wir folgende Leistungen an:
+                          <br><br>Büroraumreinigung
+                          <br><br>Sanitärreinigung
+                          <br><br>Küchenreinigung
+                          <br><br>Empfangsbereichsreinigung
+                          <br><br>Fensterreinigung
+                          <br><br>Aufzugreinigung
+                          <br><br>Treppenhausreinigung
+                          <br><br>
+
+
+                      
+                      </div>
+                        <div class="modal-footer" style="height: 50px;">
+                          
+                        </div>
+                      </div>
+                    
+                    </div>
+              </div>
+          </div>
+      </div>
+
+
+    
+        
+                <!-- Footer Start -->
+                <div class="footer wow fadeIn" data-wow-delay="0.3s" style="background-color: rgb(52, 49, 72);">
+                  <div class="container-fluid">
+                      <div class="container">
+                          <div class="footer-info">
+                              <a href="index.html" class="footer-logo"> <img src=img/logo.png ></a>
+                              <h3>Hegelstr 38b, 70174 Stuttgart, DE</h3>
+                              <div class="footer-menu">
+                                  <p>015 751 313888</p>
+                                 
+                              </div>
+                              <div class="footer-social">
+                                  <a href="https://www.facebook.com/Eko-service-109038698207709"><i class="fab fa-facebook-f"></i></a>
+                                  <a href="https://www.instagram.com/ekogebaudeservice/"><i class="fab fa-instagram"></i></a>
+                                  <a href=""><i class="fa fa-envelope"></i></a>
+                                  <a href="mailto:info@sup.de" data-label="E-mail" rel="nofollow" class="icon plain email tooltip tooltipstered"><i class="fa fa-envelope"></i></a>
+                              </div>
+                              <div class="container copyright">
+                                  <div class="row"> 
+                                      <div class="col-md-12">
+                                          <p>Designed By <a href="https://neadev.netlify.app">NEA develpoment</a></p>
+                                      </div>
+                                  </div>
+                              </div>
+                              </div>
+                              </div>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              
+              <!-- Footer End -->
+
+        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
+        <!-- JavaScript Libraries -->
+        <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+        <script src="lib/easing/easing.min.js"></script>
+        <script src="lib/wow/wow.min.js"></script>
+        <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+        <script src="lib/isotope/isotope.pkgd.min.js"></script>
+        <script src="lib/lightbox/js/lightbox.min.js"></script>
+        
+        <!-- Contact Javascript File -->
+        <script src="mail/jqBootstrapValidation.min.js"></script>
+        <script src="mail/contact.js"></script>
+
+        <!-- Template Javascript -->
+        <script src="js/main.js"></script>
+        <script>
+           // Get the modal
+           var modal = document.getElementById("myModal");
+            var modal1 = document.getElementById("myModal1");
+            var modal2 = document.getElementById("myModal2");
+            var modal3 = document.getElementById("myModal3");
+            var modal4 = document.getElementById("myModal4");
+            var modal5 = document.getElementById("myModal5");
+            var modal6 = document.getElementById("myModal6");
+            var modal7 = document.getElementById("myModal7");
+            var modal8 = document.getElementById("myModal8");
+            var modal9 = document.getElementById("myModal9");
+            // Get the button that opens the modal
+            var btn = document.getElementById("myBtn");
+            var btn1 = document.getElementById("myBtn1");
+            var btn2 = document.getElementById("myBtn2");
+            var btn3 = document.getElementById("myBtn3");
+            var btn4 = document.getElementById("myBtn4");
+            var btn5 = document.getElementById("myBtn5");
+            var btn6 = document.getElementById("myBtn6");
+            var btn7 = document.getElementById("myBtn7");
+            var btn8 = document.getElementById("myBtn8");
+            var btn9 = document.getElementById("myBtn9");
+            
+            // Get the <span> element that closes the modal
+            var span = document.getElementsByClassName("close")[0];
+            var span1 = document.getElementsByClassName("close")[1];
+            var span2 = document.getElementsByClassName("close")[2];
+            var span3 = document.getElementsByClassName("close")[3];
+            var span4 = document.getElementsByClassName("close")[4];
+            var span5 = document.getElementsByClassName("close")[5];
+            var span6 = document.getElementsByClassName("close")[6];
+            var span7 = document.getElementsByClassName("close")[7];
+            var span8 = document.getElementsByClassName("close")[8];
+            var span9 = document.getElementsByClassName("close")[9];
+          
+            // When the user clicks the button, open the modal 
+            btn.onclick = function() {
+              modal.style.display = "block";
+            }
+            btn1.onclick = function() {
+              modal1.style.display = "block";
+            }
+            btn2.onclick = function() {
+              modal2.style.display = "block";
+            }
+            btn3.onclick = function() {
+              modal3.style.display = "block";
+            }
+            btn4.onclick = function() {
+              modal4.style.display = "block";
+            }
+            btn5.onclick = function() {
+              modal5.style.display = "block";
+            }
+
+            btn6.onclick = function() {
+              modal6.style.display = "block";
+            }
+            btn7.onclick = function() {
+              modal7.style.display = "block";
+            }
+            btn8.onclick = function() {
+              modal8.style.display = "block";
+            }
+            btn9.onclick = function() {
+              modal9.style.display = "block";
+            }
+
+            // When the user clicks on <span> (x), close the modal
+            span.onclick = function() {
+              modal.style.display = "none";
+            }
+            span1.onclick = function() {
+              modal1.style.display = "none";
+            }
+            span2.onclick = function() {
+              modal2.style.display = "none";
+            }
+            span3.onclick = function() {
+              modal3.style.display = "none";
+            }
+            span4.onclick = function() {
+              modal4.style.display = "none";
+            }
+            span5.onclick = function() {
+              modal5.style.display = "none";
+            }
+            span6.onclick = function() {
+              modal6.style.display = "none";
+            }
+            span7.onclick = function() {
+              modal7.style.display = "none";
+            }
+            span8.onclick = function() {
+              modal8.style.display = "none";
+            }
+            span9.onclick = function() {
+              modal9.style.display = "none";
+            }
+
+            // When the user clicks anywhere outside of the modal, close it
+          
+            window.onclick = function(event) {
+                
+               if (event.target == modal) {
+                modal.style.display = "none";
+                
+              }
+              if (event.target == modal1) {
+                modal1.style.display = "none";
+              
+              }
+              if (event.target == modal2) {
+                modal2.style.display = "none";
+                
+              }
+              if (event.target == modal3) {
+                modal3.style.display = "none";
+                
+              }
+              if (event.target == modal4) {
+                modal4.style.display = "none";
+                
+              }
+              if (event.target == modal5) {
+                modal5.style.display = "none";
+                
+              }
+              if (event.target == modal6) {
+                modal6.style.display = "none";
+               
+              }
+              if (event.target == modal7) {
+                modal7.style.display = "none";
+               
+              }
+              if (event.target == modal8) {
+                modal8.style.display = "none";
+                
+              }
+              if (event.target == modal9) {
+                modal9.style.display = "none";
+                
+              }
+            }
+            </script>
+    </body>
+</html>
